@@ -1,0 +1,7 @@
++--------+----------+----------+--------------+----------------------------------------------------+--------------+
+| Domain | Method   | URI      | Name         | Action                                             | Middleware   |
++--------+----------+----------+--------------+----------------------------------------------------+--------------+
+|        | GET|HEAD | /        | admin.report | App\Http\Controllers\Admin\ReportController@index  | web          |
+|        | GET|HEAD | api/user |              | Closure                                            | api,auth:api |
+|        | GET|HEAD | search   | admin.search | App\Http\Controllers\Admin\ReportController@search | web          |
++--------+----------+----------+--------------+----------------------------------------------------+--------------+
